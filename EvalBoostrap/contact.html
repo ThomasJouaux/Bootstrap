@@ -16,6 +16,7 @@
 
 <body>
     
+    
         <div class="container-fluid">
             <div class="row">
                 <div class="col-8">
@@ -33,53 +34,110 @@
                     </div>
                 </div>
             </div>
-         
-
-         <!--NAVBAR-->
+              <!--NAVBAR-->
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             
-                <a class="navbar-brand" href="index.html">Jarditou</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-ms" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tableau.html">tableau</a>
-                        </li>
+            <a class="navbar-brand" href="index.html">Jarditou</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-ms" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">tableau</a>
+                    </li>
 
-                        <div class="col-">
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="index.html">Acceuil</a></li>
-                                <li><a class="dropdown-item" href="tableau.html">Tableau</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="contact.html" tabindex="-1"
-                                aria-disabled="true">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Recherche</button>
-                    </form>
+                    <div class="col-">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Acceuil</a></li>
+                            <li><a class="dropdown-item" href="tableau.html">Tableau</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" tabindex="-1"
+                            >Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Recherche</button>
+                </form>
+            </div>
+       
+     </nav>
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Nom*</label>
+                  <input type="nom" class="form-control" id="exampleFormControlInput1" >
                 </div>
-           
-         </nav>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Prénom*</label>
+                    <input type="name" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <label class="col-12" >Sexe*</label>
+                  
+                  <div class="form-check form-check-inline">
+                    
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                
+                <div class="form-group">
+                 <label for="" class="col-12 ">Date de naissance*</label>
+                 <input type="date" class="col-12 border border-active">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Adresse</label>
+                    <input type="nom" class="form-control" id="exampleFormControlInput1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Ville</label>
+                    <input type="nom" class="form-control" id="exampleFormControlInput1" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email*</label>
+                    <input type="nom" class="form-control" id="exampleFormControlInput1" placeholder="dave.loper@afpa.fr" >
+                  </div>
+                  <p class="fs-1">Votre demande</p>
+                  <div class="form-group col-12">
+                    <label for="inputState">Sujet</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Veuillez sélectionner un sujet</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Votre question* :</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                
+                <div class="form-check">
+                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                    <label>J'accepte le traitement informatique de ce formulaire.</label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary">Envoyer</button>
+                  <button type="reset" class="btn btn-secondary">Annuler</button>
+              </form>
+
+       
     
 
         
 
-         <footer>
+         
          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
             <div class="col-12">
@@ -106,10 +164,9 @@
             </div>
 
           </nav>
-         </footer>
+         
     <!--Fermeture div container-->
         </div>
-    <h1></h1>
 
 
     <!-- Optional JavaScript -->
